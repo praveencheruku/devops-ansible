@@ -3,11 +3,11 @@ region = "us-east-2"
 }
 resource "aws_instance" "myawsserver" {
   ami = "ami-077e31c4939f6a2f3"
-  instance_type = "t2.small"
+  instance_type = "t2.micro"
   key_name = "cpk-import"
 
   tags = {
-    Name = "praveen-devops-ec2-instance-v2"
+    Name = "Praveen-devops-ec2-instance-v2"
     env = "development"
   }
   provisioner "local-exec" {
