@@ -7,8 +7,8 @@ resource "aws_instance" "myawsserver" {
   key_name = "cpk-import"
 
   tags = {
-    Name = "praveen-devsecops-ec2-instance-v2"
-    env = "production"
+    Name = "praveen-devops-ec2-instance-v2"
+    env = "development"
   }
   provisioner "local-exec" {
     command = "echo The servers IP address is ${self.public_ip} && echo ${self.public_ip} > /root/inv"
